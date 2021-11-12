@@ -1,0 +1,41 @@
+.nav{
+    padding: 0.5em 2em;
+    display: flex;
+    align-items: center;
+
+    &__name{
+        font-weight: $font-bold;
+        font-size: 1.2em;
+        border-right: 1px solid $color-text;
+        padding-right: 2em;
+        margin-right: 2em;
+    }
+
+    &__help{
+        margin-left: 2em;
+        border: 1px solid $color-text;
+        border-radius: $radius;
+        font-weight: $font-bold;
+        cursor: pointer;
+        transition: $transition;
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+
+    &__logo{
+        max-width: 110px;
+        margin: 0 auto;
+    }
+
+    &__exit{
+        margin-left: auto;
+        border: none;
+        background-color: transparent;
+        font-size: 0.9em;
+        font-weight: $font-bold;
+        text-decoration: underline;
+        cursor: pointer;
+        color: $color-text;
+    }
+}

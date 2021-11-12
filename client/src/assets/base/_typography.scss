@@ -1,0 +1,30 @@
+*::selection{
+	background-color: rgba($color-accent-muted, 0.5);
+}
+
+body{
+	font-family: $font-family;
+	font-weight: $font-regular;
+	color: $color-text;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: $font-regular;
+}
+
+a{
+	text-decoration: none;
+	color: $color-accent-muted;
+	transition: $transition;
+	&:hover{
+		color: rgba($color-accent-muted, 0.7);
+	}
+}
+
+.t-small{
+    font-size: 0.9em;
+}
+
+.t-light{
+    font-weight: $font-light;
+}

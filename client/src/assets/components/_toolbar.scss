@@ -1,0 +1,83 @@
+.toolbar{
+    padding: 0.8em 1.3em;
+    border-radius: $radius;
+    display: flex;
+    align-items: center;
+    background-color: $color-text;
+    color: $color-bg;
+    box-shadow: $box-shadow;
+
+    &__tools{
+        display: flex;
+        align-items: center;
+    }
+
+    &__linewidth{
+        margin: 0 1em 0 3em;
+        display: flex;
+        align-items: center;
+        .icon{
+            margin-right: 0.3em;
+        }
+        label{
+            display: none;
+        }
+        input[type="number"]{
+            border: none;
+            text-align: center;
+            background-color: transparent;
+            color: $color-bg;
+            font-size: 1.2em;
+            font-weight: $font-bold;
+        }
+    }
+
+    &__setcolor{
+        margin-right: 1em;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.3em;
+        .color{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-width: 170px;
+            label{
+                font-size: 0.8em;
+            }
+            input[type="color"]{
+                padding: 0;
+                background-color: transparent;
+                width: 50px;
+                height: 25px;
+                border: 1px solid rgba($color-bg, 0.2);
+                border-radius: $radius-mid;
+                &::-webkit-color-swatch-wrapper {
+                    padding: 0; 
+                }
+                &::-webkit-color-swatch {
+                    border: none;
+                    border-radius: $radius-mid;
+                }      
+            }
+        }
+    }
+
+    &__moves{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        &:last-child{
+            margin-left: 1em;
+        }
+    }
+
+    &__load{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5em;
+        gap: 0.3em;
+    }
+
+}

@@ -1,0 +1,83 @@
+.button{
+    border-radius: $radius;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    border: 1px solid $color-accent;
+    background-color: $color-bg;
+    color: $color-accent;
+    transition: $transition;
+    letter-spacing: 0.1em;
+    &:hover{
+        opacity: 0.8;
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+    &:disabled{
+        opacity: 0.5;
+    }
+
+    &-main{
+        border: 1px solid $color-accent;
+        background-color: $color-accent;
+        color: $color-bg;
+    }
+
+    &-icon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            display: inline-block;
+        }
+        i{
+            font-size: 1.1em;
+            margin-left: 0.6em;
+        }
+    }
+
+    &-special{
+        border: none;
+        padding: 0.4em 1.3em;
+        background: linear-gradient(135deg, #257985 0%, #2C3E50 100%);
+        color: $color-bg;
+        border-radius: $radius-mid;
+        cursor: pointer;
+        transition: $transition;
+        font-size: 0.8em;
+        letter-spacing: normal;
+        &:hover{
+            opacity: 0.8;
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+}
+
+.button-special-only-icon{
+    border: none;
+    padding: 0.65em;
+    max-width: 40px;
+    border-radius: $radius-mid;
+    background: linear-gradient(135deg, #257985 0%, #2C3E50 100%);
+    color: $color-bg;
+    transition: $transition;
+    cursor: pointer;
+    & + &{
+        margin-left: 0.5em;
+    }
+    span{
+        display: none;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+    &.active{
+        transform: scale(0.9);
+        box-shadow: inset 0px 0px 5px 5px rgba($color-bg, 0.4);
+    }
+}

@@ -1,0 +1,13 @@
+.canvas{
+    height: 100%;
+    width: 100%;
+}
+
+canvas{
+    border: none;
+    background-color: white;
+    border-radius: $radius;
+    box-shadow: $box-shadow;
+    width: 100%;
+    height: 100%;
+}

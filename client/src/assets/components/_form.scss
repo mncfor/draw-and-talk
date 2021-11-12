@@ -1,0 +1,19 @@
+label{
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+.input,
+.textarea,
+input:not(input[type="submit"]),
+textarea{
+    border-radius: $radius;
+    border: 1px solid $color-accent;
+    padding: 0.5em 1em;
+    color: $color-text;
+
+    &.invalid{
+        border: 1px solid $color-warning;
+    }
+}
